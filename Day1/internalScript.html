@@ -1,0 +1,36 @@
+<!-- The internal script can be written in the head or the body, but it is preferred to put it on the body of the HTML document. First, let us write on the head part of the page. -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>30DaysOfScript:Internal Script</title>
+    <script>
+      console.log('Welcome to 30DaysOfJavaScript')
+    </script>
+  </head>
+  <body></body>
+</html> -->
+
+<!-- isme  two  type se  likh skte hai like ek head  ke ander  or ek body tag ke andr but sbse last me  -->
+
+<!-- <head> tag ke andar JavaScript ka use tab kiya jata hai jab hume page ke load hone se pehle kuch important cheezein setup karni hoti hain. Jaise ki kisi JavaScript library ko load karna (jaise Bootstrap ka JS CDN ya jQuery), taaki baaki script us library ka use kar sake. Iske alawa, head ke andar script ka use debugging ke liye console me messages print karne, global variables ya configuration set karne, ya phir initial theme settings apply karne ke liye bhi hota hai. Ye scripts page render hone se pehle execute ho jate hain, isliye unhe aise hi kaamon ke liye use kiya jata hai jisme HTML elements ke saath direct interaction na ho. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>30DaysOfScript:Internal Script</title>
+  </head>
+  <body>
+    <button onclick="alert('Welcome to 30DaysOfJavaScript!');">Click Me</button>
+    <script>
+      console.log('Welcome to 30DaysOfJavaScript')
+    </script>
+  </body>
+</html>
+
+<!-- <body> me likhne se, HTML elements sab load ho jaate hain aur hum directly unhe target kar sakti ho bina kisi error ke. Agar <head> me likha hota, toh script execute hone se pehle woh elements load nahi hote, aur error aa jaata. -->
+
+
+
+
+    <!-- internal scrit meas script tag  ka use karke js likhna hed or body tage ke ander -->
